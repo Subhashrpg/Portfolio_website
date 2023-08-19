@@ -2227,8 +2227,13 @@ button,
 /* Styling for the PDF container */
 .pdf-container {
   width: 100%;
-  max-width: auto; /* Set a maximum width for better readability */
-  /* margin: 0 auto; */
+  max-width: 100%; /* Set a maximum width for better readability */
+  margin: 0 auto;
+}
+
+.pdf-container iframe {
+  width: 100%;
+  height: 50em; /* Auto-adjust the height to maintain aspect ratio */
 }
 
 /* Centered button */
@@ -2260,4 +2265,17 @@ button,
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   color: black;
+}
+
+/* not downloading */
+/* Center the button on screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .center-button {
+    text-align: center;
+  }
+
+  .center-button .button {
+    display: inline-block; /* Center horizontally */
+    margin-top: 10px; /* Add space between button and other content */
+  }
 }
