@@ -2246,18 +2246,18 @@ button,
 /* Add this in your <head> section or in your CSS file */
 .info-pair {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content:flex-end;
+        align-items:normal;
         margin-bottom: 20px;
 }
 
 .info-pair p {
-        flex: 1;
-        margin-right: 10px;
+        flex: 0;
+        margin-right:0%;
 }
 
 .info-pair h4 {
-        flex: 2;
+        flex:1;
 }
 
 .intro_design{
